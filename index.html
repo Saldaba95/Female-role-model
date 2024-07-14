@@ -25,6 +25,18 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <style>
     body {
@@ -34,20 +46,28 @@
         rgb(110, 136, 161) 90.2%
       );
       color: darkcyan;
+      text-align: center;
     }
+
     .header-pic {
-      border: none;
-      border-radius: none;
-      padding-top: 15px;
-      padding-bottom: 19px;
+      border: 1px solid lightslategray;
+      border-radius: 10px;
     }
     h1 {
+      color: darkslategray;
       text-align: center;
       margin: 100px 100px;
+      text-shadow: 3px 2px aliceblue;
+      font-family: "Bona Nova SC", serif;
+      font-weight: 700;
+      font-style: normal;
     }
     p {
-      font-size: 19px;
-      font-weight: 600;
+      font-size: 25px;
+      font-family: "Caveat", cursive;
+      font-optical-sizing: auto;
+      font-weight: 500px;
+      font-style: normal;
     }
     h5 {
       color: darkslategray;
@@ -62,31 +82,80 @@
     img {
       border: 1px solid black;
       border-radius: 9px;
-      box-shadow: 1px;
+    }
+    @media (max-width: 767px) {
+      body {
+        max-width: 760px;
+      }
+    }
+
+    @media (min-width: 990px) {
+      iframe {
+        min-width: 900px;
+      }
+      blockquote {
+        min-width: 900px;
+      }
+    }
+    @media (max-width: 1199px) {
+      h1 {
+      }
+      header {
+        max-width: 1100px;
+      }
     }
   </style>
   <body>
     <div class="container">
       <header>
         <div class="pt-1"><h1>My Role Model</h1></div>
+        <hr />
 
         <div class="row">
-          <div class="col-6">
+          <div class="col-md-6 col-sm-12">
             <img
-              class="w-100 h-75 header-pic"
+              class="header-pic img-fluid"
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/132/162/original/IMG_3502.jpeg?1720390636"
               alt="Sorrell"
             />
           </div>
-          <div class="col-6 pt-3">
+          <div class="col-md-6 col-sm-12 pt-2 pb-5">
             <p>
               This young lady has proven to me that anything is posible if you
               just put your heart into it. Ms. Johnston is not only as my role
               model but also my best friend.
-              <br />I couldn't ask for a better Role model. Sorrell is one the
-              most courageous woman I've ever met.
+              <br />
+              I couldn't ask for a better Role model. Sorrell is one the most
+              courageous woman I've had the honor to meet. Eventhough it's only
+              been a few months that I have known this woman it feels like we've
+              been friends our entire lifes'
+              <br />
+              She motivates you to be the best verision of yourself. Wether you
+              are working on a project or working out at the gym shes there to
+              help you push through.
+              <br />
+              "There are no excuses to no "
             </p>
-            <h5>Stay connected... Check out Sorrell's pages.</h5>
+            <div class="pt-5 pb-5">
+              <h5>Stay connected... Check out Sorrell's pages.</h5>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <iframe
+              src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D523847803394442%26id%3D100073076795936%26substory_index%3D1257321378961373&show_text=true&width=500"
+              width="500"
+              height="518"
+              style="border: none; overflow: hidden"
+              scrolling="no"
+              frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            ></iframe>
+          </div>
+          <div class="col-sm-12 col-md-6">
             <blockquote
               class="instagram-media"
               data-instgrm-permalink="https://www.instagram.com/carllsorrell/?utm_source=ig_embed&amp;utm_campaign=loading"
@@ -383,17 +452,6 @@
             <script async src="//www.instagram.com/embed.js"></script>
           </div>
         </div>
-        <br />
-        <iframe
-          src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D523847803394442%26id%3D100073076795936%26substory_index%3D1257321378961373&show_text=true&width=500"
-          width="500"
-          height="517"
-          style="border: none; overflow: hidden"
-          scrolling="no"
-          frameborder="0"
-          allowfullscreen="true"
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-        ></iframe>
       </header>
       <div
         id="carousel-role-modle-sorrell"
